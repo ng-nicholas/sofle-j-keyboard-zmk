@@ -57,11 +57,11 @@ layers:
   - Keyboard
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
+  - '&td_space'
   - '&td_del'
-  - '&td_space'
   - PRINTSCREEN
-  - '&td_space'
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&td_space'
   - MENU
   - $$mdi:apple-keyboard-option$$
   - '&td_pgdn'
