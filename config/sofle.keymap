@@ -77,14 +77,14 @@
         alt_tab_left: alt_tab_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(TAB) &kp LEFT>;
+            bindings = <&sk LA(TAB) &kp LEFT>;
             label = "ALT_TAB_LEFT";
         };
 
         alt_tab_right: alt_tab_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(TAB) &kp RIGHT>;
+            bindings = <&sk LA(TAB) &kp RIGHT>;
             label = "ALT_TAB_RIGHT";
         };
     };
