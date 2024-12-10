@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace$$'}
   - PRINTSCREEN
   - {t: '$$mdi:backspace$$', h: '$$mdi:backspace-reverse-outline$$'}
-  - '&td_space'
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-space$$'}
   - MENU
   - $$mdi:apple-keyboard-option$$
   - '&td_pgdn'
