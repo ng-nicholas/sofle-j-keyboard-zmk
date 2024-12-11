@@ -60,8 +60,8 @@ layers:
   - '&td_space'
   - '&td_del'
   - PRINTSCREEN
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-space$$'}
   - '&td_bksp'
+  - '&td_space'
   - MENU
   - $$mdi:apple-keyboard-option$$
   - '&td_pgdn'
