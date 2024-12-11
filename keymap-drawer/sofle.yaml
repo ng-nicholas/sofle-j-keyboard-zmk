@@ -57,11 +57,11 @@ layers:
   - Hardware
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
-  - '&td_space'
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace$$'}
+  - '&td_space'
   - PRINTSCREEN
-  - {t: '$$mdi:backspace$$', h: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-space$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:backspace-reverse-outline$$'}
   - MENU
   - $$mdi:apple-keyboard-option$$
   - '&td_pgdn'
@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
