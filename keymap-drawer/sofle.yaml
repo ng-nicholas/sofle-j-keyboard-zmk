@@ -57,11 +57,11 @@ layers:
   - Hardware
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace$$'}
   - '&td_space'
+  - '&td_del'
   - PRINTSCREEN
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-space$$'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:backspace-reverse-outline$$'}
+  - '&td_bksp'
   - MENU
   - $$mdi:apple-keyboard-option$$
   - '&td_pgdn'
