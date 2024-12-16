@@ -58,9 +58,9 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - '&td_space'
-  - '&td_del'
+  - $$mdi:backspace-reverse-outline$$
   - PRINTSCREEN
-  - '&td_bksp'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_space'
   - MENU
   - $$mdi:apple-keyboard-option$$
@@ -131,7 +131,7 @@ layers:
   - {t: '0', s: )}
   - {t: ., s: '>'}
   Shortcuts:
-  - Ctl+Alt+ $$mdi:keyboard-esc$$
+  - Ctl+Sft+ $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
