@@ -16,7 +16,7 @@
 #define U_MS_R &mmv MOVE_RIGHT
 
 &mt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <230>;
     flavor = "balanced";
 };
 
@@ -40,7 +40,8 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
-        tap-ms = <30>;
+        tap-ms = <40>;
+        label = "scroll_encoder";
     };
 
     td_dash_plus: td_dash_plus {
@@ -162,7 +163,7 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp TAB &kp LEFT>,
+                <&kp TAB &kp LEFT &kp LEFT>,
                 <&macro_tap>,
                 <&sk LEFT_ALT>,
                 <&macro_release>,
