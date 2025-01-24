@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - '&td_dash_plus'
+  - {t: '=', s: +}
   - '&td_sqbrkt_open'
   - Q
   - W
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: HOME, h: END}
+  - {t: '-', s: _}
   - PRINTSCREEN
   - Hardware
   - $$mdi:apple-keyboard-control$$
@@ -62,8 +62,8 @@ layers:
   - PRINTSCREEN
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_space'
-  - MENU
-  - $$mdi:apple-keyboard-option$$
+  - HOME
+  - END
   - '&td_pgdn'
   Keypad:
   - F11
@@ -94,8 +94,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - _
+  - +
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
@@ -122,11 +122,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
   - $$mdi:keyboard-tab$$
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-tab-reverse$$
+  - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
   - {t: ., s: '>'}
