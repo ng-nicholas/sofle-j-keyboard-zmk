@@ -39,7 +39,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - .
+  - '&quote_start'
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
   - Z
   - X
@@ -56,7 +56,7 @@ layers:
   - PRINTSCREEN
   - Hardware
   - $$mdi:apple-keyboard-control$$
-  - LEFT WIN
+  - '&td_win_menu'
   - '&td_space'
   - $$mdi:backspace-reverse-outline$$
   - PRINTSCREEN
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - (
+  - '&par_start'
   - $$mdi:keyboard-tab$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-tab-reverse$$
