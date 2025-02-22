@@ -84,7 +84,7 @@
         label = "tab td into open square bracket";
         #binding-cells = <0>;
         tapping-term-ms = <300>;
-        bindings = <&kp TAB>, <&kp LEFT_BRACKET>;
+        bindings = <&kp TAB>, <&brkt_start>;
     };
 
     td_esc: td_esc {
@@ -96,21 +96,25 @@
         tapping-term-ms = <300>;
     };
 
+    td_win_menu: td_win_menu {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_WIN_MENU";
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_WIN>, <&kp K_CONTEXT_MENU>;
+
+        tapping-term-ms = <300>;
+    };
+
+    scroll_encoder_v2: scroll_encoder_v2 {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc_scroll_right>, <&msc_scroll_left>;
+
+        tap-ms = <30>;
+        label = "SCROLL_ENCODER_V2";
+    };
+
     macros {
-        alt_tab_left: alt_tab_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LA(TAB) &kp LEFT>;
-            label = "ALT_TAB_LEFT";
-        };
-
-        alt_tab_right: alt_tab_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LA(TAB) &kp RIGHT>;
-            label = "ALT_TAB_RIGHT";
-        };
-
         appswitcher_right: appswitcher_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -146,6 +150,41 @@
             wait-ms = <100>;
             tap-ms = <40>;
         };
+
+        par_start: par_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "PAR_START";
+        };
+
+        brkt_start: brkt_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "BRKT_START";
+        };
+
+        quote_start: quote_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
+            label = "QUOTE_START";
+        };
+
+        msc_scroll_left: msc_scroll_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>;
+            label = "MSC_SCROLL_LEFT";
+        };
+
+        msc_scroll_right: msc_scroll_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>;
+            label = "MSC_SCROLL_RIGHT";
+        };
     };
 
     keymap {
@@ -155,23 +194,23 @@
             bindings = <
 &td_esc              &kp N1            &kp N2              &kp N3          &kp N4     &kp N5        &kp UP_ARROW     &kp N6         &kp N7     &kp N8           &kp N9               &kp N0                     &kp EQUAL
 &td_sqbrkt_open      &kp Q             &kp W               &kp E           &kp R      &kp T         &kp DOWN         &kp Y          &kp U      &kp I            &kp O                &kp P                      &td_sqbrkt_close
-&kp CAPS             &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &lt 1 F    &kp G         &kp LEFT         &kp H          &lt 1 J    &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMICOLON  &kp APOS
+&kp CAPS             &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &lt 1 F    &kp G         &kp LEFT         &kp H          &lt 1 J    &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMICOLON  &quote_start
 &mt CAPS LEFT_SHIFT  &kp Z             &kp X               &kp C           &lt 2 V    &kp B         &kp RIGHT        &kp N          &lt 2 M    &kp COMMA        &kp DOT              &kp FSLH                   &kp MINUS
-&kp PRINTSCREEN      &mo 3             &kp LEFT_CONTROL    &kp LEFT_WIN    &td_space  &kp DELETE    &kp PRINTSCREEN  &kp BACKSPACE  &td_space  &kp HOME         &kp END              &td_pgdn
+&kp PRINTSCREEN      &mo 3             &kp LEFT_CONTROL    &td_win_menu    &td_space  &kp DELETE    &kp PRINTSCREEN  &kp BACKSPACE  &td_space  &kp HOME         &kp END              &td_pgdn
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder_v2>;
             display-name = "Default layer";
             label = "Default";
         };
 
         Keypad {
             bindings = <
-&kp F11  &kp F1    &kp F2          &kp F3     &kp F4                &kp F5      &msc SCRL_UP     &kp F6       &kp F7                 &kp F8  &kp F9  &kp F10  &kp F12
-&none    &mkp MB5  &mkp LCLK       &mkp MCLK  &mkp RCLK             &mkp MB4    &msc SCRL_DOWN   &none        &none                  &kp N7  &kp N8  &kp N9   &kp EQUAL
-&none    &none     &kp UNDERSCORE  &kp PLUS   &trans                &none       &msc SCRL_LEFT   &none        &trans                 &kp N4  &kp N5  &kp N6   &kp MINUS
-&none    &none     &none           &none      &none                 &none       &msc SCRL_RIGHT  &none        &none                  &kp N1  &kp N2  &kp N3   &kp FSLH
-&trans   &none     &none           &none      &kp LEFT_PARENTHESIS  &kp TAB     &mkp MCLK        &kp LS(TAB)  &kp RIGHT_PARENTHESIS  &none   &kp N0  &kp DOT
+&kp F11  &kp F1    &kp F2          &kp F3     &kp F4      &kp F5      &msc SCRL_UP     &kp F6       &kp F7                 &kp F8  &kp F9  &kp F10  &kp F12
+&none    &mkp MB5  &mkp LCLK       &mkp MCLK  &mkp RCLK   &mkp MB4    &msc SCRL_DOWN   &none        &none                  &kp N7  &kp N8  &kp N9   &kp EQUAL
+&none    &none     &kp UNDERSCORE  &kp PLUS   &trans      &none       &msc SCRL_LEFT   &none        &trans                 &kp N4  &kp N5  &kp N6   &kp MINUS
+&none    &none     &none           &none      &none       &none       &msc SCRL_RIGHT  &none        &none                  &kp N1  &kp N2  &kp N3   &kp FSLH
+&trans   &none     &none           &none      &par_start  &kp TAB     &mkp MCLK        &kp LS(TAB)  &kp RIGHT_PARENTHESIS  &none   &kp N0  &kp DOT
             >;
 
             display-name = "Extra keys";
