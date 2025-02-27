@@ -102,7 +102,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
-        tap-ms = <80>;
+        tap-ms = <40>;
     };
 
     macros {
