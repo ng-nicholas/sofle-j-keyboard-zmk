@@ -35,15 +35,6 @@
         };
     };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-
-        tap-ms = <40>;
-        label = "scroll_encoder";
-    };
-
     td_space: td_space {
         compatible = "zmk,behavior-tap-dance";
         label = "mod tap space enter, tap dance into repeat";
@@ -105,13 +96,13 @@
         tapping-term-ms = <300>;
     };
 
-    scroll_encoder_v2: scroll_encoder_v2 {
+    scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
+        label = "SCROLL_ENCODER";
         #sensor-binding-cells = <0>;
-        bindings = <&msc_scroll_right>, <&msc_scroll_left>;
+        bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
-        tap-ms = <30>;
-        label = "SCROLL_ENCODER_V2";
+        tap-ms = <80>;
     };
 
     macros {
@@ -199,7 +190,7 @@
 &kp PRINTSCREEN      &mo 3             &kp LEFT_CONTROL    &td_win_menu    &td_space  &kp DELETE    &kp PRINTSCREEN  &kp BACKSPACE  &td_space  &kp HOME         &kp END              &td_pgdn
             >;
 
-            sensor-bindings = <&scroll_encoder_v2>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "Default layer";
             label = "Default";
         };
