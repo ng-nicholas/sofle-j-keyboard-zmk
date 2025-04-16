@@ -94,12 +94,12 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - _
+  - KP EQUAL
   - {type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '"'
   - $$mdi:pan-left$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '"'
   - {type: held alternate}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -107,12 +107,12 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
+  - +
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-right$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
