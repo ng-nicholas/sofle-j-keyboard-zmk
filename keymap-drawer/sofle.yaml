@@ -94,8 +94,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
-  - _
-  - KP EQUAL
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {type: held}
   - '"'
   - $$mdi:pan-left$$
@@ -107,7 +107,7 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
+  - _
   - +
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '''', s: '"'}
