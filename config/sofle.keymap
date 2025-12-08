@@ -179,11 +179,11 @@
 
         Default {
             bindings = <
-&td_esc              &kp N1            &kp N2              &kp N3          &kp N4     &kp N5        &kp UP_ARROW     &kp N6         &kp N7     &kp N8           &kp N9               &kp N0                     &kp EQUAL
-&td_sqbrkt_open      &kp Q             &kp W               &kp E           &kp R      &kp T         &kp DOWN         &kp Y          &kp U      &kp I            &kp O                &kp P                      &td_sqbrkt_close
-&kp CAPS             &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &lt 1 F    &kp G         &kp LEFT         &kp H          &lt 1 J    &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
-&mt CAPS LEFT_SHIFT  &kp Z             &kp X               &kp C           &lt 2 V    &kp B         &kp RIGHT        &kp N          &lt 2 M    &kp COMMA        &kp DOT              &kp FSLH                   &kp MINUS
-&kp PRINTSCREEN      &mo 3             &kp LEFT_CONTROL    &td_win_menu    &td_space  &kp DELETE    &kp PRINTSCREEN  &kp BACKSPACE  &td_space  &kp HOME         &kp END              &td_pgdn
+&td_esc          &kp N1          &kp N2            &kp N3            &kp N4              &kp N5        &kp UP_ARROW     &kp N6         &kp N7               &kp N8             &kp N9           &kp N0                   &kp EQUAL
+&td_sqbrkt_open  &kp Q           &kp W             &kp E             &kp R               &kp T         &kp DOWN         &kp Y          &kp U                &kp I              &kp O            &kp P                    &td_sqbrkt_close
+&kp CAPS         &mt LEFT_GUI A  &mt LEFT_ALT S    &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G         &kp LEFT         &kp H          &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
+&kp CAPS         &kp Z           &lt 3 X           &lt 2 C           &lt 1 V             &kp B         &kp RIGHT        &kp N          &lt 1 M              &lt 2 COMMA        &lt 3 DOT        &kp FSLH                 &kp MINUS
+&kp PRINTSCREEN  &mo 3           &kp LEFT_CONTROL  &td_win_menu      &td_space           &kp DELETE    &kp PRINTSCREEN  &kp BACKSPACE  &td_space            &kp HOME           &kp END          &td_pgdn
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -195,8 +195,8 @@
             bindings = <
 &kp F11  &kp F1      &kp F2     &kp F3     &kp F4      &kp F5               &msc SCRL_UP     &kp F6             &kp F7                 &kp F8  &kp F9  &kp F10  &kp F12
 &none    &mkp MB5    &mkp LCLK  &mkp MCLK  &mkp RCLK   &mkp MB4             &msc SCRL_DOWN   &none              &none                  &kp N7  &kp N8  &kp N9   &kp EQUAL
-&none    &kp ESCAPE  &kp MINUS  &kp EQUAL  &trans      &kp DOUBLE_QUOTES    &msc SCRL_LEFT   &kp DOUBLE_QUOTES  &trans                 &kp N4  &kp N5  &kp N6   &kp MINUS
-&none    &none       &kp UNDER  &kp PLUS   &none       &kp SQT              &msc SCRL_RIGHT  &kp SQT            &none                  &kp N1  &kp N2  &kp N3   &kp FSLH
+&none    &kp ESCAPE  &kp MINUS  &kp EQUAL  &none       &kp DOUBLE_QUOTES    &msc SCRL_LEFT   &kp DOUBLE_QUOTES  &none                  &kp N4  &kp N5  &kp N6   &kp MINUS
+&none    &none       &kp UNDER  &kp PLUS   &trans      &kp SQT              &msc SCRL_RIGHT  &kp SQT            &trans                 &kp N1  &kp N2  &kp N3   &kp FSLH
 &trans   &none       &none      &none      &par_start  &kp TAB              &mkp MCLK        &kp LS(TAB)        &kp RIGHT_PARENTHESIS  &none   &kp N0  &kp DOT
             >;
 
@@ -207,11 +207,11 @@
 
         Shortcuts {
             bindings = <
-&kp LC(LS(ESCAPE))  &none  &none      &none  &kp LA(F4)  &none                 &none  &none  &none   &none  &none  &none  &none
-&none               &none  &none      &none  &none       &none                 &none  &none  &none   &none  &none  &none  &none
-&none               &none  &kp LC(S)  &none  &none       &none                 &none  &none  &none   &none  &none  &none  &none
-&none               &none  &none      &none  &trans      &none                 &none  &none  &trans  &none  &none  &none  &none
-&kp K_MUTE          &none  &none      &none  &none       &kp LA(LC(DELETE))    &none  &none  &none   &none  &none  &none
+&kp LC(LS(ESCAPE))  &none  &none      &none   &kp LA(F4)  &none                 &none  &none  &none   &none   &none   &none  &none
+&none               &none  &none      &none   &none       &none                 &none  &none  &none   &none   &none   &none  &none
+&none               &none  &kp LC(S)  &none   &none       &none                 &none  &none  &none   &none   &none   &none  &none
+&none               &none  &trans     &trans  &trans      &none                 &none  &none  &trans  &trans  &trans  &none  &none
+&kp K_MUTE          &none  &none      &none   &none       &kp LA(LC(DELETE))    &none  &none  &none   &none   &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -223,8 +223,8 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
 &none  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &none  &none            &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
 &none  &out OUT_USB  &out OUT_BLE    &none         &none         &none           &none  &none            &none            &none            &none            &none            &none
-&none  &bootloader   &soft_off       &sys_reset    &none         &none           &none  &none            &none            &sys_reset       &soft_off        &bootloader      &none
-&none  &trans        &none           &none         &none         &none           &none  &none            &none            &none            &none            &none
+&none  &none         &trans          &trans        &trans        &none           &none  &none            &trans           &trans           &trans           &none            &none
+&none  &none         &none           &none         &none         &none           &none  &none            &none            &none            &none            &none
             >;
 
             label = "Hardware";
