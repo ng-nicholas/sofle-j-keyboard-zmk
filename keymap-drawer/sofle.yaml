@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   Default:
-  - '&td_esc'
+  - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -13,8 +13,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
-  - '&td_sqbrkt_open'
+  - '&td_sqbrkt'
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -26,21 +26,21 @@ layers:
   - I
   - O
   - P
-  - '&td_sqbrkt_close'
-  - $$mdi:apple-keyboard-caps$$
+  - {t: \, s: '|'}
+  - {t: '`', h: '$$mdi:apple-keyboard-caps$$', s: '~'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
-  - G
+  - {t: G, h: CONTEXT MENU}
   - $$mdi:arrow-left-bold$$
-  - H
+  - {t: H, h: CONTEXT MENU}
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '-', s: _}
   - Z
   - {t: X, h: Hardware}
   - {t: C, h: Shortcuts}
@@ -52,7 +52,7 @@ layers:
   - {t: ',', h: Shortcuts, s: <}
   - {t: ., h: Hardware, s: '>'}
   - {t: /, s: '?'}
-  - {t: '-', s: _}
+  - {t: '=', s: +}
   - PRINTSCREEN
   - Hardware
   - $$mdi:apple-keyboard-control$$
@@ -225,7 +225,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
