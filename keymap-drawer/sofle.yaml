@@ -13,8 +13,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
   - '&td_sqbrkt_open'
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -26,8 +26,8 @@ layers:
   - I
   - O
   - P
-  - '&td_sqbrkt_close'
-  - $$mdi:apple-keyboard-caps$$
+  - {t: \, s: '|'}
+  - {t: '`', h: '$$mdi:apple-keyboard-caps$$', s: '~'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -40,7 +40,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '-', s: _}
   - Z
   - {t: X, h: Hardware}
   - {t: C, h: Shortcuts}
@@ -52,19 +52,19 @@ layers:
   - {t: ',', h: Shortcuts, s: <}
   - {t: ., h: Hardware, s: '>'}
   - {t: /, s: '?'}
-  - {t: '-', s: _}
+  - {t: '=', s: +}
   - PRINTSCREEN
-  - Hardware
-  - $$mdi:apple-keyboard-control$$
-  - '&td_win_menu'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
+  - END
   - '&td_space'
   - $$mdi:backspace-reverse-outline$$
   - PRINTSCREEN
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_space'
-  - HOME
-  - END
-  - '&td_pgdn'
+  - PgDn
+  - PgUp
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Keypad:
   - F11
   - F1
@@ -249,7 +249,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
